@@ -1,15 +1,14 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Header from './header.tsx'
-import Body from './body.tsx'
-import Footer from './footer.tsx'
+import Container from './container.tsx'
+
 
 createRoot(document.getElementById('root')!).render(
 
   <StrictMode>
-    <Header/>
-    <Body/>
-    <Footer/>
+    <Container nome = 'Header'/>
+    <Container nome = 'Body'/>
+    <Container nome = 'Footer'/>
   </StrictMode>,
 
 )
