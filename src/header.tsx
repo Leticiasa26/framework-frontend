@@ -1,10 +1,17 @@
-function header(){
+//States 
+//Props
+//Hooks
 
-    return(
-        <>
-            <h1>Header</h1>
-        </>
-    )
+import react from "react"
+
+class Header extends react.Component{
+
+    render(): react.ReactNode {
+
+        return <h1>Header</h1>
+        
+    }
 }
 
-export default header
+export default Header
+
