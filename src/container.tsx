@@ -1,31 +1,32 @@
 //States 
 //Props - são informações que você pode passar para um componente
-//Hooks
+//Hooks - iniciam com "use", só pode usar ele no começo do componente
 
-interface ContainerProps{
+import { useState } from "react"
 
-    nome:string 
+interface ContainerProps {
+
+  nome:string
 
 }
 
-function Container (props:ContainerProps) {
+function Container ( props:ContainerProps ) {
+  function trataInput ( event:React.ChangeEvent<HTMLInputElement> ) {
 
-    let contador = 10
+    console.log (event.currentTarget.value)
 
-    function mudar () {
+  }
 
-        contador = 20
+  return(
 
-    }
-
-    return( 
-    
     <>
-    <h1> {props.nome} </h1>
 
-    Valor Contador:{contador}
+      <h1>{props.nome}</h1>
 
-    <button onClick = {mudar} > Mudar </button>
+      {/*Texto:{texto}*/}
+
+      <input type="text" placeholder="Mostrar Texto" onChange={trataInput}/>
+
     </>
 
   )
