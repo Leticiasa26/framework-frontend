@@ -21,17 +21,15 @@ function Container (props:ContainerProps) {
     return( 
     
     <>
-
     <h1> {props.nome} </h1>
 
     Valor Contador:{contador}
 
-    Button onClick={mudar}
-    
+    <button onClick = {mudar} > Mudar </button>
     </>
 
-    )
+  )
+
 }
 
 export default Container
-
