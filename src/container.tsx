@@ -22,13 +22,13 @@ function Container ( props:ContainerProps ) {
 
   }
 
-  return(
+  return (
 
     <>
 
       <h1>{props.nome}</h1>
 
-      Texto:{texto}
+      <p>Texto:{texto}</p>
 
       <input type="text" placeholder="Mostrar Texto" onChange={trataInput}/>
 
